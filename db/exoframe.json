@@ -1,0 +1,14 @@
+{
+  "name": "liamsaul-message-database",
+  "domain": false,
+  "hostname": "liamsaul-message-database",
+  "image": "postgres:12",
+  "envFile": ".env",
+  "port": 5000,
+  "env": {
+    "APP_ENV": "PRODUCTION",
+    "POSTGRES_HOSTNAME" : "liamsaul-message-database",
+    "POSTGRES_PASSWORD": "$POSTGRES_PASSWORD"
+  },
+  "volumes": ["YOURNAME_message_database_volume:/var/lib/postgresql/data"]
+}
