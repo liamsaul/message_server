@@ -2,10 +2,9 @@
   "name": "liamsaul-message-web",
   "domain": "liamsaul-messages.xf.mkrs.link",
   "port": 5000,
-  "envFile": ".env",
   "env": {
     "APP_ENV": "PRODUCTION",
     "POSTGRES_HOSTNAME": "liamsaul-message-database",
-    "POSTGRES_PASSWORD": "$POSTGRES_PASSWORD"
+    "POSTGRES_PASSWORD": "liamsaul-postgres-password"
   }
 }
